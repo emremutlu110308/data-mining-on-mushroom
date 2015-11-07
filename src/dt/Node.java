@@ -19,7 +19,7 @@ import jxl.Workbook;
  * @author Jackie
  */
 public class Node {
-    private File file = new File("src/DecisionTree/Data.xls");
+    private File file = new File("src/dt/Data.xls");
     private int attribute;
     private List condition = new ArrayList();
     private String result = ""; //poisonous(p),edible(e),not defined(n)

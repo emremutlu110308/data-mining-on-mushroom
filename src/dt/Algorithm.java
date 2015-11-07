@@ -373,7 +373,7 @@ public class Algorithm {
             }
         }
         
-        File file = new File("src/DecisionTree/Data.xls");
+        File file = new File("src/dt/Data.xls");
         int success = 0;
         int a = 0;
         int b = 0;
