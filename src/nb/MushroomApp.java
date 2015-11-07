@@ -1,4 +1,4 @@
-package mushroom;
+package nb;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -30,8 +30,8 @@ public class MushroomApp {
 	private static final int TESTING_SHEET_NUMBER = 4;	
 	
 	
-	private static final String TRAINING_SHEET_PATH = "src/mushroom/CleanData_V3.xlsx";
-	private static final String TESTING_SHEET_PATH = "src/mushroom/CleanData_V3.xlsx";
+	private static final String TRAINING_SHEET_PATH = "src/nb/CleanData_V3.xlsx";
+	private static final String TESTING_SHEET_PATH = "src/nb/CleanData_V3.xlsx";
 	
 	private static Map<String, Object> countAiMap = new HashMap<String, Object>();
 	private static Map<String, Object> countAiCiMap = new HashMap<String, Object>();

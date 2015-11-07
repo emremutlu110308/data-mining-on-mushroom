@@ -1,4 +1,4 @@
-package mushroom;
+package nb;
 
 public class Mushroom {
 	private char capShape='\0';  //bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s 
@@ -26,6 +26,8 @@ public class Mushroom {
     private char classDistribution = '\0';
 	
     public Mushroom(){}
+
+    
     
     public Mushroom(char capShape, char capSurface, char capColor,
     		char bruises, char odor,  char gillAttachment, char gillSpacing, 
