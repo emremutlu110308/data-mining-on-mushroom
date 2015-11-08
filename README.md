@@ -1,3 +1,1 @@
-# mushroom-mining-naive-base
-
-This project is a data mining classification task to predict the edibility of mushroom by naive bayes algorithm. 
+This project aims to do a classification task on the mushroom data to predict whether the mushroom is edible or poisonous. Three algorithm is used. For example, naive bayes, decision tree and KNN.
