@@ -143,7 +143,7 @@ public class Validator<T extends DatasetType> {
 		{
 			System.out.println("Class Recall " + l.get(i) + ": " + Recall(l.get(i)));
 			System.out.println("Precision Class " + l.get(i) + ": " + Precision(l.get(i)));
-			System.out.println("Measure F Class " + l.get(i) + " with w = 1: " + f_measure(l.get(i),1));
+			System.out.println("Measure F Class " + l.get(i) + f_measure(l.get(i),1));
 			System.out.println();
 		}
 		

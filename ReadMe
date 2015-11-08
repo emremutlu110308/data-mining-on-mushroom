@@ -10,3 +10,4 @@ Group Member: Chen Jiaqi
 3. The input data are all the same for the three algorithm. The are randomized first and then pre process to different format for these algorithm
 4. Some calculations has been done on excel to facilitate the computation of some algorithm
 5. There are a detailed ReadMe.txt file in each package specify instruction to run corresponding algorithm
+6. Please open the project with Eclipse, and ¡°Clean and Build¡± the project before running because the binary files has been deleted as required.

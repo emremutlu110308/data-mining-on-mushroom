@@ -1,3 +1,4 @@
+Gain Ratio According to Attributes:
 MAX1: 
 0.25661997454774044 0-1
 MAX2: 
@@ -14,5 +15,9 @@ MAX7:
 21.348556858313327 0-1-0-0
 a = 1282, b = 0, c = 21, d = 1135
 Accuracy = 2417 / 2438 = 0.9913863822805579
-Precision = 0.9838833461243285
-F-Measure = 0.9918762088974855
+Precision (Edible) = 0.9838833461243285
+Precision (Poisonous) = 1.0
+Recall (Edible) = 1.0
+Recall (Poisonous) = 0.9818339100346021
+F-Measure (Edible) = 0.9918762088974855
+F-Measure (Poisonous) = 0.9908336970755128

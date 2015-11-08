@@ -1,6 +1,5 @@
 k-NN Notes & Results:
 
-
 Notes:
 
 1. Import the project with Eclipse
