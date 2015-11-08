@@ -137,7 +137,7 @@ public class Validator<T extends DatasetType> {
 	
 	public void generateReport()
 	{
-		System.out.println("Acurracy of the system: " + Accuracy());
+		System.out.println("Accuracy of the system: " + Accuracy());
 		System.out.println();
 		for(int i = 0; i < l.size(); i++)
 		{

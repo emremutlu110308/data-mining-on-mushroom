@@ -177,11 +177,19 @@ public class MushroomApp {
     	    }
     	}
     	
+    	// a truePositive
+    	// b falseNegative
+    	// c falsePositive
+    	// d trueNegative
+    	
     	double accuracy = (double)(numTruePositive+numTrueNegative)/
          (numTruePositive+numFalseNegative+numFalsePositive+numTrueNegative);
-        double precision = (double)numTruePositive/(numTruePositive+numFalsePositive);
-        double recall = (double)numTruePositive/(numTruePositive+numFalseNegative);
-        double fMeasure = 2*precision*recall/(precision+recall);
+        double precisionEdible = (double)numTruePositive/(numTruePositive+numFalsePositive);
+        double precisionPoisonous = (double)numTrueNegative/(numTrueNegative+numFalseNegative);
+        double recallEdible = (double)numTruePositive/(numTruePositive+numFalseNegative);
+        double recallPoisonous = (double)numTrueNegative/(numTrueNegative+numFalsePositive);
+        double fMeasureEdible = 2*precisionEdible*recallEdible/(precisionEdible+recallEdible);
+        double fMeasurePoisonous = 2*precisionPoisonous*recallPoisonous/(precisionPoisonous+recallPoisonous);
     	
     	System.out.println("===================================================");
 	    System.out.println("                  ||        Predict Class        ||");
@@ -198,8 +206,12 @@ public class MushroomApp {
 	    
 	    System.out.println("===================================================");
 	    System.out.println("Overall Accuracy is: " + accuracy);
-	    System.out.println("Overall Precision is: " + precision);
-	    System.out.println("Overall F-Measure is: " + fMeasure);
+	    System.out.println("Overall Precision Edible is: " + precisionEdible);
+	    System.out.println("Overall Precision Poisonous is: " + precisionPoisonous);
+	    System.out.println("Overall Recall Edible is: " + recallEdible);
+	    System.out.println("Overall Recall Poisonous is: " + recallPoisonous);
+	    System.out.println("Overall F-Measure Edible is: " + fMeasureEdible);
+	    System.out.println("Overall F-Measure Poisonous is: " + fMeasurePoisonous);
     }
    
     public static double calculateProbability(Mushroom mushroom, char classLabel){

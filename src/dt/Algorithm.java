@@ -535,8 +535,12 @@ public class Algorithm {
         }
         System.out.println("a = " + a + ", b = " + b + ", c = " + c + ", d = " + d);
         System.out.println("Accuracy = " + success + " / " + total + " = " + (double)success/(double)total);
-        System.out.println("Precision = " + (double)a/(double)(a+c));
-        System.out.println("F-Measure = " + (double)(2*a)/(double)(2*a+b+c));
+        System.out.println("Precision (Edible) = " + (double)a/(double)(a+c));
+        System.out.println("Precision (Poisonous) = " + (double)d/(double)(d+b));
+        System.out.println("Recall (Edible) = " + (double)a/(double)(a+b));
+        System.out.println("Recall (Poisonous) = " + (double)d/(double)(d+c));
+        System.out.println("F-Measure (Edible) = " + (double)(2*a)/(double)(2*a+b+c));
+        System.out.println("F-Measure (Poisonous) = " + (double)(2*d)/(double)(2*d+b+c));
     }
     
     public static String [][] readExcel(File file){

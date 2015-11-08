@@ -1,3 +1,10 @@
+Group Leader: Zhang Xiaokun
+Group Member: Chen Jiaqi
+              Li Yishan
+              Liu Xue
+              Yang Zihe
+
+
 1. This project include three data mining algorithm for the mushroom dataset.
 2. dt stands for decision tree, knn stands for K Nearest Neighbor, nb stands for naive bayes
 3. The input data are all the same for the three algorithm. The are randomized first and then pre process to different format for these algorithm

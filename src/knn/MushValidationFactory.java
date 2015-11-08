@@ -14,7 +14,7 @@ public class MushValidationFactory {
 		Mush[] pf = null;
 		String csvFile = MushValidationFactory.class.getResource("/knn/mush.validation.txt").getPath();
 		BufferedReader br = null;
-		String csvSplitBy = ";";
+		String csvSplitBy = ",";
 	 
 		try {
 	 
@@ -29,6 +29,7 @@ public class MushValidationFactory {
 			pf = new Mush[line.length];
 			for(int i = 0; i < line.length; i++)
 			{
+				
 				String[] item = line[i].split(csvSplitBy);
 				String[] d = new String[item.length];
 				d[0] = "1";

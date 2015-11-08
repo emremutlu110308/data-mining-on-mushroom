@@ -14,7 +14,7 @@ public class MushFactory {
 		Mush[] pf = null;
 		String csvFile = MushFactory.class.getResource("/knn/mush.data.txt").getPath();
 		BufferedReader br = null;
-		String csvSplitBy = ";";
+		String csvSplitBy = ",";
 	 
 		try {
 	 

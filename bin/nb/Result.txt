@@ -11,5 +11,9 @@ Class || Poisonous||    158         ||    998      ||
 
 ===================================================
 Overall Accuracy is: 0.9351927809680065
-Overall Precision is: 0.8902777777777777
-Overall F-Measure is: 0.9419544452608376
+Overall Precision Edible is: 0.8902777777777777
+Overall Precision Poisonous is: 1.0
+Overall Recall Edible is: 1.0
+Overall Recall Poisonous is: 0.8633217993079585
+Overall F-Measure Edible is: 0.9419544452608376
+Overall F-Measure Poisonous is: 0.9266480965645311
