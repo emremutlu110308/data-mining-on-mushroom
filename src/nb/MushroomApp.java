@@ -19,8 +19,6 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;  
 import org.apache.poi.xssf.usermodel.XSSFWorkbook; 
 
-
-
 public class MushroomApp {
 	
 	private static ArrayList<Mushroom> trainingDataSet = new ArrayList<Mushroom>();
@@ -106,6 +104,9 @@ public class MushroomApp {
     		 for(int i=0; i<attributes.size(); i++){
     			 String attribute = attributes.get(i);
     			 char classChar = mushroom.getClassDistribution();
+    			 
+    			 //count number of occurrence of AiCi, a number represent the 
+    			 //order of the atrribute will be added before the attribute value
     			 if(!attribute.equals(CLASS_DISTRIBUTION)){
     				 char Ai = mushroom.getAttributeByAttributeName(attribute);
     			     String AiCi = Integer.toString(i)+ Character.toString(Ai)+Character.toString(classChar);
@@ -118,6 +119,7 @@ public class MushroomApp {
     		        	 countAiCiMap.put(AiCi, val+1);
     		         }
     		         
+    		         //count the number of Ai to calculate P(Ai)
     		         String myAi = Integer.toString(i) + Character.toString(Ai); 
     		         if(!countAiMap.containsKey(myAi)){
     		        	 int val = 0;
@@ -224,6 +226,7 @@ public class MushroomApp {
     		}
     		
     		totalPAiCi = totalPAiCi * nominator/(numOfTrainingClassLabel + 2); 
+    		
     		//make Laplace adjustment
     		String key2 = Integer.toString(i)+Character.toString(attrChar);
     		nominator=1;
